@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Portfolio Layout</title>
+    </head>
+    <style>
+
+        body{
+            background-color: bisque;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: oblique;
+            scroll-behavior: smooth;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+            
+        }  
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .project-box{
+            border: 5px solid black;
+            border-radius: 30%;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        p{
+            margin-top: 30px;
+        }
+
+        #projects{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 10px;
+            display: flex;
+
+        }
+
+        H1{
+            background-color: black;
+            color: azure;
+            font-size: 50px;
+        }
+
+        li:hover{
+            background-color: black;
+        }
+
+        footer{
+            padding: 20px;
+        }
+
+
+        @media(max-width: 600px) {
+            #projects{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul{
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+
+    <body>
+        <h1>Egbuchua Patrick</h1>
+        <p>Aspiring web and software developer</p>
+
+        <nav>
+            <ul>
+                <li><a href="../4.1 Webpages/public/about.html"> About page</a></li>
+                <li><a href="../4.1 Webpages/public/contact.html"> Contact me</a></li>
+                <li><a href="../4.3 HTML Portfolio Project/4.3 HTML Porfolio Project/public/birthday-invite.html"> Project</a></li>
+            </ul>
+        </nav>
+
+        <p>I am a Nigerian man, i love to write and i am someone who is trying to become something in life. i am trying to get into tech, and hopefully, i pray it does something for me.</p>
+
+        <section id="projects">
+            <h2>My projects</h2>
+
+            <div class="project-container">
+                <div class="project-box">
+                    <h3>My profile</h3>
+                    <p>Just a little website that has some informtion about me.</p>
+                </div>
+
+                <div class="project-box">
+                    <h3>call-to-ction banner</h3>
+                    <p>I designed a website urging people to join by clicking on the button on the website. </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>copyright @patrickegbuchua on LinkedIn</footer>
+    </body>
+</html>    
